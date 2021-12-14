@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "bin": {
-    "create-elasticsearch-dataset": "./dist/index.js"
+    "create-elasticsearch-dataset": "node ./dist/index.js"
   },
   "scripts": {
     "test": "jest"
