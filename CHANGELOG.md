@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.0.4...v1.0.5) (2021-12-14)
+
+
+### Bug Fixes
+
+* fix ([ecb2f7c](https://github.com/rap2hpoutre/create-elasticsearch-dataset/commit/ecb2f7c8fc8bf331099aa591e49f0bd43efa7aec))
+
 ## [1.0.4](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.0.3...v1.0.4) (2021-12-14)
 
 
