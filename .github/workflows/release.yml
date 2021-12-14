@@ -20,6 +20,8 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Build
         run: npm i -g @vercel/ncc && ncc build src/index.ts
+      - name: add node shebang prefix
+        run: sed -i '1s/^/#!\/usr\/bin\/env node\n/' dist/index.js
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
