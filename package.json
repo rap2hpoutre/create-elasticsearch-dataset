@@ -4,9 +4,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "jest",
-    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
-    "prepublish": "npm run tsc"
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.16.5",
