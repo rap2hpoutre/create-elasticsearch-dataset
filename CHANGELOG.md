@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.0.6...v1.1.0) (2021-12-16)
+
+
+### Features
+
+* it works ([d30713b](https://github.com/rap2hpoutre/create-elasticsearch-dataset/commit/d30713bca46de26ca54d8e80ec9e079c2fb029ba))
+
 ## [1.0.6](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.0.5...v1.0.6) (2021-12-14)
 
 
