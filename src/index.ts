@@ -10,24 +10,35 @@ yargs(hideBin(process.argv))
     "$0",
     "Generate a dataset for elasticsearch",
     (yargs) => {
-      return yargs.option("name", {
-        alias: "n",
+      return yargs.option("dataset", {
+        alias: "d",
         describe: "name of the dataset",
         choices: ["books", "movies"],
         type: "string",
+        required: true,
       });
     },
     async (argv) => {
-      if (argv.name === "books") {
-        const { count } = await importCsv({
-          client: new Client({
-            node: "http://localhost:9200",
-          }),
-          index: "books",
-          filePath: "./data/books.csv",
-        });
-        console.log(`Imported ${count} documents in index 'books'`);
+      let filePath = "";
+      const index = argv.dataset || "";
+      switch (argv.dataset) {
+        case "books":
+          filePath = "./data/books.csv";
+          break;
+        case "movies":
+          filePath = "./data/movies.csv";
+          break;
+        default:
+          console.error("Invalid dataset name");
+          process.exit(1);
       }
+      console.log(`Importing documents into index '${index}'…`);
+      const { count } = await importCsv({
+        client: new Client({ node: "http://localhost:9200" }),
+        index,
+        filePath,
+      });
+      console.log(`Imported ${count} documents into index '${index}'`);
     }
   )
   .help()
