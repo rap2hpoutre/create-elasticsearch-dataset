@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.1.0...v1.1.1) (2022-01-02)
+
+
+### Bug Fixes
+
+* argument name ([09f57fa](https://github.com/rap2hpoutre/create-elasticsearch-dataset/commit/09f57fa4a8341f379eaf32c05463cc2a22c5baf3))
+
 # [1.1.0](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.0.6...v1.1.0) (2021-12-16)
 
 
