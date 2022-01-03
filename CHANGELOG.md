@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.1.1...v1.1.2) (2022-01-03)
+
+
+### Bug Fixes
+
+* fix path resolution ([2777fb1](https://github.com/rap2hpoutre/create-elasticsearch-dataset/commit/2777fb157c59b6e0304a95b0aa6a3f7995a15baf))
+* path ([aa27558](https://github.com/rap2hpoutre/create-elasticsearch-dataset/commit/aa275581b25fcd8a6bfaa710aac984562d9991c1))
+
 ## [1.1.1](https://github.com/rap2hpoutre/create-elasticsearch-dataset/compare/v1.1.0...v1.1.1) (2022-01-02)
 
 
