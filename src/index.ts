@@ -2,6 +2,7 @@ import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 import { importCsv } from "csv-elasticsearch";
 import { Client } from "@elastic/elasticsearch";
+import * as path from "path";
 
 yargs(hideBin(process.argv))
   .scriptName("create-elasticsearch-dataset")
@@ -23,10 +24,10 @@ yargs(hideBin(process.argv))
       const index = argv.dataset || "";
       switch (argv.dataset) {
         case "books":
-          filePath = "./data/books.csv";
+          filePath = path.join(__dirname, "../data/books.csv");
           break;
         case "movies":
-          filePath = "./data/movies.csv";
+          filePath = path.join(__dirname, "../data/movies.csv");
           break;
         default:
           console.error("Invalid dataset name");
